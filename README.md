@@ -1,7 +1,7 @@
 # whatsphish
 whatsapp phishing using selenium  
 
-#for ssl certificates
+# for ssl certificates
 
 openssl genrsa -out key.pem 2048
 

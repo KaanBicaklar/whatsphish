@@ -1,0 +1,2 @@
+Flask==2.2.5
+selenium==4.5.0

@@ -1,10 +1,29 @@
-# whatsphish
-whatsapp phishing using selenium  
+# 🕵️‍♂️ WhatsPhish - WhatsApp Phishing with Selenium
 
-# for ssl certificates
+**WhatsPhish** is an automated phishing framework that uses **Selenium WebDriver** to send customized messages via **WhatsApp Web**, designed for social engineering simulations, awareness campaigns, or red team engagements.
 
-openssl genrsa -out key.pem 2048
+> ⚠️ For **authorized security testing and educational purposes only**.
 
-openssl req -new -x509 -key key.pem -out cert.pem -days 365
+---
 
-# Enter the test.csv of the information of the people to be social engineered, the results will be written to the result.csv file. In case of any crash, there is no need to start from 0, you can continue sending messages from the last person sent.
+## 🚀 Features
+
+- Automates login and message delivery on WhatsApp Web
+- Reads targets and messages from a CSV file (`test.csv`)
+- Logs sent messages to `result.csv`
+- Supports resume from the last unsent user in case of a crash
+- Simple SSL certificate generation support (`cert.pem`, `key.pem`)
+
+---
+
+## 🛠 Requirements
+
+- Python 3.x
+- `selenium` package
+- Chrome + matching `chromedriver`
+- `openssl` (for optional certificate generation)
+
+Install dependencies:
+
+```bash
+pip install selenium
